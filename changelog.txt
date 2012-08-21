@@ -1,0 +1,4 @@
+1.1
+----
+Changed use of section where no headers
+Changed sidebars to use asides for widgets
