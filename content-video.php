@@ -21,10 +21,10 @@
 
 		</div>
 	</header>
-		<section class="post-content">
+		<div class="post-content">
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'status' ) ); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( '<span>Pages:</span>', 'status' ), 'after' => '</div>' ) ); ?>
-		</section>
+		</div>
 
 		<div class="post-info">
 				<span class="post-tags">

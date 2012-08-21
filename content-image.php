@@ -22,14 +22,14 @@
 		</div>
 	</header>
 	<?php if ( is_search()) : ?>
-		<section class="post-summary">
+		<div class="post-summary">
 			<?php the_excerpt(); ?>
-		</section>
+		</div>
 	<?php else : ?>
-		<section class="post-content">
+		<div class="post-content">
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'status' ) ); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( '<span>Pages:</span>', 'status' ), 'after' => '</div>' ) ); ?>
-		</section>
+		</div>
 	<?php endif; ?>
 		<div class="post-info">
 				<span class="post-tags">
