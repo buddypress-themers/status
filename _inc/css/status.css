@@ -1157,10 +1157,13 @@ display: inline;
 margin: 0 0 2px 7px;
 padding: 4px;
 }
-img.alignleft {
+img.alignleft, .activity-inner p img {
 display: inline;
 margin: 0 7px 2px 0;
 padding: 4px;
+}
+.activity-inner p img {
+float: left;
 }
 /*--------------------------------------------------------------
 5.5 - Posts
@@ -1613,7 +1616,7 @@ opacity: 1;
 font-size: 12px;
 font-size: 1.2rem;
 }
-.activity-comments {
+.activity-comments, .activity-meta {
 clear: both;
 }
 
