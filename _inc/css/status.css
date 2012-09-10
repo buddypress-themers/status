@@ -388,7 +388,7 @@ margin: 0 1px 0 1px;
 }
 #content, #content-404, .directory #content-profile {
 float: none;
-padding: 0 1em 1em 1em;
+padding: 2em 1em 1em 1em;
 }
 #content-profile {
 margin: 0;
@@ -1122,7 +1122,7 @@ color: #555;
 #item-header-avatar img,
 #activity-stream img,
 article.post img,
-article.page img {
+article.page img, .post-content img{
 height: auto !important;
 max-width: 100%;
 }
@@ -1157,13 +1157,10 @@ display: inline;
 margin: 0 0 2px 7px;
 padding: 4px;
 }
-img.alignleft, .activity-inner p img {
+img.alignleft {
 display: inline;
 margin: 0 7px 2px 0;
 padding: 4px;
-}
-.activity-inner p img {
-float: left;
 }
 /*--------------------------------------------------------------
 5.5 - Posts
@@ -1254,7 +1251,6 @@ border: 4px solid #fff;
 margin: 0;
 }
 div.post-content {
-margin-left: 105px;
 }
 p.date span:first-child {
 font-style: italic;
@@ -1616,7 +1612,7 @@ opacity: 1;
 font-size: 12px;
 font-size: 1.2rem;
 }
-.activity-comments, .activity-meta {
+.activity-comments {
 clear: both;
 }
 
@@ -1929,6 +1925,7 @@ text-decoration: none;
 .groups #item-header-content {
 margin-bottom: 20px;
 overflow: hidden;
+clear:both;
 }
 li#groups-order-select {
 margin: 10px 0 10px 10px;
@@ -2736,5 +2733,16 @@ width: 55%;
 }
 #calendar-wrap{
 padding:0 10px;
+}
+.groups #item-header-content {
+margin-bottom: 20px;
+overflow: hidden;
+clear:none;
+}
+.groups #content, #content-register, #content, #content-404,  #content-profile, .home .status-signup {
+padding: 0em 1em;
+}
+#content, #content-404, .directory #content-profile {
+padding: 0 1em 1em 1em;
 }
 }
