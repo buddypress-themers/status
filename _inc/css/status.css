@@ -350,7 +350,7 @@ overflow: hidden;
 #content-register {
 max-width: 550px;
 }
-#content-register, #content, #content-404,  #content-profile, .home .status-signup {
+.groups #content, #content-register, #content, #content-404,  #content-profile, .home .status-signup {
 background: #fff;
 border-bottom: 1px solid #ddd;
 border-left: 1px solid #fff;
@@ -361,7 +361,7 @@ border-radius: 3px;
 -khtml-border-radius: 3px;
 -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
-padding: 1em;
+padding: 2em 1em 1em 1em;
 box-shadow: 0 0 2px rgba(0, 0, 0,0.1);
 -moz-box-shadow: 0 0 2px rgba(0, 0, 0,0.1);
 -webkit-box-shadow: 0 0 2px rgba(0, 0, 0,0.1);
@@ -388,7 +388,7 @@ margin: 0 1px 0 1px;
 }
 #content, #content-404, .directory #content-profile {
 float: none;
-padding: 0 1em 1em 1em;
+padding: 2em 1em 1em 1em;
 }
 #content-profile {
 margin: 0;
@@ -1122,7 +1122,7 @@ color: #555;
 #item-header-avatar img,
 #activity-stream img,
 article.post img,
-article.page img {
+article.page img, .post-content img{
 height: auto !important;
 max-width: 100%;
 }
@@ -1251,7 +1251,6 @@ border: 4px solid #fff;
 margin: 0;
 }
 div.post-content {
-margin-left: 105px;
 }
 p.date span:first-child {
 font-style: italic;
@@ -1926,6 +1925,7 @@ text-decoration: none;
 .groups #item-header-content {
 margin-bottom: 20px;
 overflow: hidden;
+clear:both;
 }
 li#groups-order-select {
 margin: 10px 0 10px 10px;
@@ -2260,7 +2260,7 @@ border-radius: 3px;
 -khtml-border-radius: 3px;
 -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
-padding: 10px 20px;
+padding: 2em 1em 1em 1em;
 box-shadow: 0 0 2px rgba(0, 0, 0,0.1);
 -moz-box-shadow: 0 0 2px rgba(0, 0, 0,0.1);
 -webkit-box-shadow: 0 0 2px rgba(0, 0, 0,0.1);
@@ -2423,7 +2423,7 @@ vertical-align: middle;
 }
 
 div#item-header div#item-actions {
-float: right;
+float: none;
 margin: 0 0 15px 10px;
 text-align: left;
 }
@@ -2622,6 +2622,11 @@ text-align: right;
 8.0 - Media queries
 --------------------------------------------------------------*/
 @media only screen and (min-width:960px) {
+div#item-header div#item-actions {
+float: right;
+margin: 0 0 15px 10px;
+text-align: left;
+}
 #profile-left {
 margin-right: 3%;
 float: left;
@@ -2728,5 +2733,16 @@ width: 55%;
 }
 #calendar-wrap{
 padding:0 10px;
+}
+.groups #item-header-content {
+margin-bottom: 20px;
+overflow: hidden;
+clear:none;
+}
+.groups #content, #content-register, #content, #content-404,  #content-profile, .home .status-signup {
+padding: 0em 1em;
+}
+#content, #content-404, .directory #content-profile {
+padding: 0 1em 1em 1em;
 }
 }

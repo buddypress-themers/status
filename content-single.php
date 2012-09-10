@@ -21,10 +21,10 @@
 		</div>
 
 	</header>
-	<section class="post-content">
+	<div class="post-content">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'status'), 'after' => '</div>' ) ); ?>
-	</section>
+	</div>
 
 		<div class="post-info">
 				<span class="post-tags">
