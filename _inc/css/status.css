@@ -350,7 +350,7 @@ overflow: hidden;
 #content-register {
 max-width: 550px;
 }
-#content-register, #content, #content-404,  #content-profile, .home .status-signup {
+.groups #content, #content-register, #content, #content-404,  #content-profile, .home .status-signup {
 background: #fff;
 border-bottom: 1px solid #ddd;
 border-left: 1px solid #fff;
@@ -361,7 +361,7 @@ border-radius: 3px;
 -khtml-border-radius: 3px;
 -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
-padding: 1em;
+padding: 2em 1em 1em 1em;
 box-shadow: 0 0 2px rgba(0, 0, 0,0.1);
 -moz-box-shadow: 0 0 2px rgba(0, 0, 0,0.1);
 -webkit-box-shadow: 0 0 2px rgba(0, 0, 0,0.1);
@@ -2263,7 +2263,7 @@ border-radius: 3px;
 -khtml-border-radius: 3px;
 -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
-padding: 10px 20px;
+padding: 2em 1em 1em 1em;
 box-shadow: 0 0 2px rgba(0, 0, 0,0.1);
 -moz-box-shadow: 0 0 2px rgba(0, 0, 0,0.1);
 -webkit-box-shadow: 0 0 2px rgba(0, 0, 0,0.1);
@@ -2426,7 +2426,7 @@ vertical-align: middle;
 }
 
 div#item-header div#item-actions {
-float: right;
+float: none;
 margin: 0 0 15px 10px;
 text-align: left;
 }
@@ -2625,6 +2625,11 @@ text-align: right;
 8.0 - Media queries
 --------------------------------------------------------------*/
 @media only screen and (min-width:960px) {
+div#item-header div#item-actions {
+float: right;
+margin: 0 0 15px 10px;
+text-align: left;
+}
 #profile-left {
 margin-right: 3%;
 float: left;
