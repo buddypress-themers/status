@@ -46,10 +46,10 @@
 						<?php the_post_thumbnail(); ?>
 					</div>
 		<?php } } ?>
-		<section class="post-summary">
+		<div class="post-summary">
 			<?php the_excerpt(); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( '<span>Pages:</span>', 'status' ), 'after' => '</div>' ) ); ?>
-		</section>
+		</div>
 		<div class="post-info">
 				<span class="post-tags">
 					<?php $tags_list = get_the_tag_list( '', ', ' ); 
