@@ -2740,9 +2740,12 @@ overflow: hidden;
 clear:none;
 }
 .groups #content, #content-register, #content, #content-404,  #content-profile, .home .status-signup {
-padding: 0em 1em;
+padding: 0em;
 }
 #content, #content-404, .directory #content-profile {
 padding: 0 1em 1em 1em;
+}
+#content-profile-headerfull #item-header {
+padding: 1em;
 }
 }
