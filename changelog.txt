@@ -2,7 +2,5 @@
 ----
 Changed use of section where no headers
 Changed sidebars to use asides for widgets
-
-1.2
-----
 Various responsive fixes
+Add in github page
