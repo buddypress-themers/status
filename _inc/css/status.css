@@ -2745,4 +2745,7 @@ padding: 0em;
 #content, #content-404, .directory #content-profile {
 padding: 0 1em 1em 1em;
 }
+#content-profile-headerfull #item-header {
+padding: 1em;
+}
 }
