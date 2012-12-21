@@ -1391,6 +1391,8 @@ width: 97%!important;
 }
 #whats-new-options {
 float: right;
+height: 0;
+overflow: hidden;
 padding-top: 10px;
 }
 #whats-new-submit {
