@@ -8,3 +8,7 @@ Add in github page
 1.1.1
 -----
 Padding fixes for content / content header on larger screen resolutions
+
+1.2
+-----
+Correct Activity whats new submit button
